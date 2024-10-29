@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom right, #eda2eb , rgb(151, 224, 207));
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    opacity: 0.6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+h1{
+    color: rgb(161, 125, 252);
+    font-family: "Parisienne", cursive;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    color: #5d16c7;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #6b5b95;
+    border-bottom: 2px solid #faecdc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid #e7dbff;
+}
+
+th {
+    background-color: #e7dbff;
+}
+
+.image-cell {
+    text-align: center;
+}
+
+/* Image styling */
+.image-cell img {
+    width: 120%;
+    max-width: 120px; 
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15%; 
+}
+
+/* Hobbies Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid #e7dbff;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Customize Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #847ef2;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b780f3;
+}
+
+/* Gallery Grid */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1 1 25%; /* 4 columns in a row */
+    padding: 10px;
+    max-width: 25%;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Expanding Image Container */
+.container {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.container img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    display: flex;
+}
+
+#imgtext {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(208, 120, 249);
+}
+  
+/* visited link */
+a:visited {
+    color: rgb(237, 112, 208);
+}
+  
+/* mouse over link */
+a:hover {
+    color: rgb(155, 124, 250);
+}
+  
+::selection {
+    color: rgb(255, 255, 255);
+    background: #e3a4ef;
+}
+
+/*Welcome page*/
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.greeting {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.next-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #eae5f7;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #ffffff;
+}
