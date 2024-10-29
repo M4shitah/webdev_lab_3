@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Campus Life</title>
+    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mashitah Arifin</h1>
+        <nav>
+            <a href="aboutme.html#basic-info">About Me</a>
+            <a href="aboutme.html#contact">Contact</a>
+            <a href="aboutme.html#academic-info">Academic Info</a>
+            <a href="aboutme.html#skills">Skills</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="campuslife.html">Campus Life</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="campus-life" class="section">
+            <h2>Campus Life</h2>
+            <p>Here are some of my significant moments in UTHM during my degree years! </p>
+    
+            <div class="gallery">
+                <div class="row">
+                    <div class="column">
+                        <img src="campuslife_1.JPG" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                    <div class="column">
+                        <img src="campuslife_2.JPG" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                    <div class="column">
+                        <img src="campuslife_3.JPG" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                    <div class="column">
+                        <img src="campuslife_4.JPG" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                    <div class="column">
+                        <img src="campuslife_5.JPG" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                    <div class="column">
+                        <img src="campuslife_6.jpg" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                    <div class="column">
+                        <img src="campuslife_7.JPG" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                    <div class="column">
+                        <img src="campuslife_8.JPG" onclick="expandImage(this, 'campusLife');">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expanding Image Container -->
+            <div class="container" id="campusLifeContainer">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImgCampusLife">
+                <div id="imgtextCampusLife"></div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
